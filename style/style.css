@@ -1,0 +1,742 @@
+body {
+  margin: 0;
+  font-family: "Montserrat", sans-serif; /*основной шрифт*/
+  font-size: 14px;
+  line-height: 1.5;
+  color: #ffffff;
+  -webkit-font-smoothing: antialiased; /*сглаживает шрифты*/
+  background-color: #303030;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+*,
+*:before *:after {
+  box-sizing: border-box; /*чтобы padding считался во внутрь блока и не расширял его*/
+}
+
+.page {
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+/* Header ==================================================*/
+.top-box {
+  position: relative;
+}
+.header {
+  width: 100%;
+  height: 120px;
+  position: absolute;
+  top: 0;
+  
+  z-index: 1000;
+  padding: 0;
+  display: flex; /*расположить блоки в строку*/
+  justify-content: space-between; /*сделать промежуток между блоками*/
+  align-items: center; /*выравние содержимого блока по вертикали*/
+}
+.header.fixed {
+  position: fixed;
+  background-color: #303030;
+  height: 80px;
+  max-width: 1440px;
+  
+}
+.header__logo {
+  padding-left: 60px;
+  width: 190px;
+}
+
+/* NAV ==================================================*/
+.header__nav {
+  display: flex;
+  font-size: 20px; /*размер букв навигации*/
+  text-transform: uppercase; /*все большие буквы*/
+}
+.nav__link {
+  margin-left: 50px;
+  color: #fff;
+  text-decoration: none; /*убрать подчёркивание ссылок навигации*/
+  opacity: 0.75; /*уменьшенная прозрачность*/
+  transition: opacity 0.1s linear; /*плавный переход*/
+}
+.nav__link:first-child {
+  /*первая кнопка навигации*/
+  margin-left: 0;
+}
+.nav__link:last-child {
+  margin-right: 60px;
+}
+.nav__link:hover {
+  /*действия при наводе на ссылку*/
+  opacity: 1; /*нормальная прозрачность*/
+}
+
+/* HOME ==================================================*/
+.home {
+  width: 100%;
+  height: 800px;
+  background: url("../imag/home/home-bg1.jpg") left no-repeat;
+  position: relative;
+}
+
+.home__inner {
+  width: 100%;
+  height: 800px;
+  background: url("../imag/home/home-bg2.png") right no-repeat;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+/* BANNER ==================================================*/
+.banner {
+  max-width: 620px;
+  min-height: 350px;
+  margin-top: 220px;
+  margin-right: 170px;
+  margin-left: auto;
+}
+.banner__title {
+  font-family: "Grand Hotel", cursive;
+  font-size: 100px;
+  color: #ffc200;
+}
+.banner__text {
+  font-family: "Montserrat", sans-serif;
+  font-size: 30px;
+  color: #fff;
+  padding-bottom: 45px;
+}
+.banner__button {
+  display: inline-block;
+  padding: 20px 55px;
+  border-radius: 5px;
+  background-color: #ffc200;
+  font-family: "Montserrat", sans-serif;
+  font-size: 15px;
+  font-weight: bold;
+  color: #303030;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  transition: background 0.2s linear, color 0.1s linear;
+}
+.banner__button:hover {
+  /*действие кнопки при наводе курсора*/
+  background-color: #ffd54a;
+  color: rgb(0, 0, 0);
+}
+
+/* PRODUCT ==================================================*/
+.product {
+  display: block;
+
+  width: 100%;
+  background-color: #fff;
+  color: #333333;
+}
+.section__top {
+  padding: 140px 270px 70px;
+  text-align: center;
+}
+.section__title {
+  font-family: "Grand Hotel", cursive;
+  font-size: 60px;
+}
+.section__text {
+  font-family: "Montserrat", sans-serif;
+  font-size: 24px;
+}
+.product__inner {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding-bottom: 140px;
+}
+.product__item {
+  box-sizing: border-box;
+  padding: 10px;
+  width: 33.3333%;
+  min-width: 260px;
+  text-align: center;
+}
+.product__item-tittle {
+  padding-bottom: 10px;
+  font-family: "Grand Hotel", cursive;
+  font-size: 36px;
+}
+.product__item-text {
+  margin: 0 auto;
+  max-width: 240px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+}
+/* TASTE ==================================================*/
+.taste {
+  width: 100%;
+  height: 700px;
+  background-color: #fff;
+  position: relative;
+}
+.taste__inner {
+  width: 100%;
+  height: 700px;
+  position: absolute;
+  display: flex;
+  bottom: 0;
+  right: 0;
+  background: url("../imag/tast/tast-bg.png") bottom no-repeat;
+}
+.taste__img {
+  position: absolute;
+  top: 150px;
+  left: 80px;
+}
+.banner--taste {
+  max-width: 570px;
+  min-height: 350px;
+  margin-top: 150px;
+  margin-right: 100px;
+  margin-left: auto;
+}
+.banner__title--taste {
+  font-size: 80px;
+}
+.banner__text--taste {
+  font-size: 25px;
+  line-height: 1.5;
+}
+.banner__button--taste {
+  padding: 22px 75px;
+  border-radius: 7px;
+  font-size: 20px;
+  font-weight: bold;
+}
+/* STATISTIC ==================================================*/
+.statistic {
+  height: 904px;
+  background: url("../imag/statistic/statistic.jpg") center;
+}
+.section__top-statistic {
+  padding: 150px 320px 90px;
+}
+.section__title-statistic {
+  font-size: 80px;
+  color: #ffc200;
+}
+.statistic__inner {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin: 0 150px;
+}
+.statistic__item {
+  margin-bottom: 30px;
+  width: 230px;
+  height: 230px;
+  border: 3px solid #fff;
+  border-radius: 50%;
+  text-align: center;
+  justify-content: center;
+}
+.statistic__value {
+  padding-top: 55px;
+  
+  font-size: 50px;
+  font-weight: 700;
+  color: #ffc200;
+}
+.statistic__seanse {
+  font-size: 30px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+/* GRILL ==================================================*/
+.grill {
+  width: 100%;
+  height: 750px;
+  background-color: #fff;
+  position: relative;
+}
+.grill__inner {
+  width: 100%;
+  height: 750px;
+  position: absolute;
+  display: flex;
+  bottom: 0;
+  right: 0;
+  background: url("../imag/grill/grill-bg.png") top no-repeat;
+}
+.grill__img {
+  position: absolute;
+  top: 150px;
+  right: 80px;
+}
+.banner--grill {
+  max-width: 600px;
+  min-height: 380px;
+  margin-top: 180px;
+  margin-right: auto;
+  margin-left: 130px;
+}
+.banner__title--grill {
+  font-size: 80px;
+}
+.banner__text--grill {
+  font-size: 25px;
+  line-height: 1.5;
+}
+.banner__button--grill {
+  padding: 22px 75px;
+  border-radius: 7px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+/* LENORA ==================================================*/
+.lenora {
+  min-height: 800px;
+  background: url("../imag/Lenora\ Field.jpg") center no-repeat;
+}
+.lenora__front {
+  min-height: 800px;
+  background-color: #ffc200;
+  opacity: 0.8;
+  display: flex;
+  justify-content: center;
+  vertical-align: center;
+  
+}
+.section__lenora {
+  display: inline-block;
+  margin: auto 50px;
+  
+  width: 915px;
+  text-align: center;
+  
+}
+.section__text--lenora {
+  color: #303030;
+  font-size: 35px;
+  
+}
+.section__title--lenora {
+  color: #303030;
+  font-size: 65px;
+}
+/* SUBSCRIBE ==================================================*/
+.subscribe {
+  min-height: 795px;
+  background: url("../imag/subscribe.jpg");
+}
+.section__title--sub {
+  font-size: 74px;
+  color: #303030;
+}
+.section__text--sub {
+  font-size: 24px;
+  color: #303030;
+  line-height: 2;
+}
+.subscribe__form {
+  padding: 85px;
+  display: flex;
+  justify-content: center;
+  
+}
+.subscribe__input {
+  width: 30%;
+  min-width: 350px;
+  max-width: 550px;
+  height: 42px;
+  padding: 12px;
+  background: #fff;
+  border: none;
+  font-family: "Montserrat", sans-serif;
+  font-size: 22px;
+  line-height: 1.1;
+  color: #000;
+  font-weight: 300;
+}
+.subscribe__input::placeholder {
+  color: rgb(170, 169, 169);
+}
+.subscribe__input:focus {
+  outline: 0;
+  background-color: #f3f1b3;
+}
+.subscribe__btn {
+  width: 220px;
+  height: 65px;
+  padding: 12px 30px;
+  background-color: #ffc200;
+  font-family: "Montserrat", sans-serif;
+  font-size: 22px;
+  line-height: 1.1;
+  font-weight: 700;
+  color: rgb(10, 10, 10);
+  text-transform: uppercase;
+  border: 0;
+  cursor: pointer;
+  transition: background 0.2s linear;
+}
+.subscribe__btn:hover {
+  background-color: #ffd54a;
+}
+.subscribe__btn:focus {
+  outline: 0;
+}
+/* FOOTER ==================================================*/
+.footer {
+  max-height: 600px;
+  
+}
+.footer__inner {
+  margin: 250px auto;
+  display: flex;
+}
+
+.footer__item {
+  padding: 0 30px;
+  width: 20%;
+  justify-content: space-evenly;
+}
+.footer__item:first-child {
+  margin-left: 50px;
+  width: 35%;
+}
+.footer__item-title {
+  margin-bottom: 40px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 24px;
+  line-height: 1.1;
+  font-weight: 700;
+  color: #fff;
+  text-transform: uppercase;
+}
+.footer__item-text {
+  font-family: "Montserrat", sans-serif;
+  font-size: 20px;
+  line-height: 1.5;
+  font-weight: 300;
+  color: #fff;
+}
+.footer__social a {
+  display: inline-block;
+  vertical-align: middle;
+ /* margin-left: 20px;*/
+  font-size: 45px;
+  color: #fff;
+  
+}
+.footer__social a:first-child {
+  margin-left: 0px;
+}
+
+.footer__item ul {
+  padding-inline-start: 0px;
+}
+.footer__item ul li {
+  list-style: none;
+}
+.footer__link {
+  font-family: "Montserrat", sans-serif;
+  font-size: 20px;
+  line-height: 1.5;
+  font-weight: 300;
+  color: #fff;
+  text-decoration: none;
+}
+/* Burger ==================================================*/
+.burger {
+  display: none;
+  padding: 12px 25px;
+  background: none;
+  border: 0;
+
+  cursor: pointer;
+}
+
+.burger__item {
+  display: block;
+  width: 30px;
+  height: 3px;
+
+  background-color: #fff;
+
+  font-size: 0;
+  color: transparent;
+  position: relative; /*для позиционирования бефора и афтера*/
+}
+
+.burger__item:before, 
+.burger__item:after /* деаем еще две черточки одну снизу, другую сверху*/ {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+
+  position: absolute;
+  left: 0;
+  z-index: 1;
+}
+.burger__item:before {
+  top: -8px;
+}
+.burger__item:after {
+  bottom: -8px;
+}
+
+
+
+/*=============== Media ============
+===================================*/
+
+@media (max-width: 1250px) {
+
+/* TASTE & GRILL==================================================*/ 
+  .banner--taste, .banner--grill {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 620px;
+    min-height: 350px;
+    margin: 40px auto 0;
+  }
+  .banner__title--taste, .banner__title--grill {
+    padding-top: 20px;
+    font-size: 100px;
+  }
+  .banner__text--taste,.banner__text--grill {
+    font-size: 20px;
+    text-align:center;
+    
+  }
+  .banner__button--taste,.banner__button--grill {
+    padding: 20px 55px;
+    font-size: 15px;
+  }
+
+  .taste__inner, .grill__inner {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .taste__img {
+    position: relative;
+    justify-content: center;
+    left: 0;
+    top: 40px;
+  }
+  .grill__img {
+    position: relative;
+    justify-content: center;
+    left: 0;
+    top: 40px;
+  }
+
+  .taste__img img,.grill__img img {
+    width: 250px;
+    height: auto;
+  }
+/* STATISTIC ==================================================*/
+.section__top-statistic {
+  padding: 50px 160px;
+  }
+}
+
+
+@media (max-width: 1030px) {
+  /* HOME ==================================================*/
+  .home {
+    width: 100%;
+    height: 800px;
+    background: #303030;
+  }
+  .home__inner {
+  background: url("../imag/home/home-bg2.png") center ;
+  }
+  .header__logo {
+    padding-left: 30px;
+  }
+
+/* HEADER__NAV ==================================================*/
+    .header__nav {/* стилизация спрятанной навигации*/
+      display: none; 
+      width: 100%;
+      flex-direction: column;
+  
+      background-color: #303030;
+      text-align: right;
+  
+      position: absolute;
+      top: 80px;
+      right: 0;
+    }
+  
+    .header__nav.show {
+      display: flex;
+    }
+  
+    .nav__link {
+      padding: 9px 15px;
+    }
+  
+/* BURGER ==================================================*/
+    .burger {
+      display: block;
+    }
+/* BANNER ==================================================*/
+    .banner--home {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      max-width: 620px;
+      min-height: 350px;
+      margin: 100px auto 0;
+    }
+    .banner__title--home {
+      padding-top: 20px;
+      font-size: 120px;
+    }
+    .banner__text--home {
+      font-size: 25px;
+      text-align:center;
+    }
+    .banner__button--home {
+      padding: 20px 55px;
+      font-size: 15px;
+    }
+/* SECTION ==================================================*/
+  .section__top, .section__top-statistic {
+      padding: 100px 50px 70px;
+      text-align: center;
+    }
+    .statistic__inner {
+    margin: 0 50px;
+    }
+
+/* FOOTER ==================================================*/
+  .footer__inner {
+    margin: 70px auto;
+  }
+
+  .footer__item {
+    padding: 15px;
+    
+  }
+  .footer__item:first-child {
+    margin-left: 10px;
+  }
+  .footer__item-title {
+    margin-bottom: 20px;
+    font-size: 20px;
+  }
+  .footer__item-text {
+    font-size: 14px;
+  }
+  .footer__social a {
+    font-size: 35px;
+  }
+  .footer__link {
+    font-size: 16px;
+}
+}
+@media (max-width: 730px) {
+  .header {
+    height: 60px;
+  }
+.subscribe__form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.subscribe__input {
+  box-sizing: border-box;
+  height: 60px;
+}
+.subscribe__btn{
+  width: 30%;
+  min-width: 350px;
+  max-width: 600px;
+}
+
+
+}
+@media (max-width: 590px) {
+
+ .banner__title--home {
+  padding-top: 0px;
+  font-size: 90px;
+ }
+ .banner__title--taste, .banner__title--grill {
+  padding-top: 0px;
+  font-size: 70px;
+}
+.section__top, .section__top-statistic {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    }
+    .section__text {
+      font-size: 18px;
+    }
+    .product__inner {
+    padding-bottom: 40px;
+  }
+  .section__top, .section__top-statistic {
+    padding-bottom: 20px;
+}
+.section__top-statistic {
+  padding-top: 0px;
+}
+  .statistic__item {
+    margin-bottom: 25px;
+    width: 135px;
+    height: 135px;
+  }
+.statistic__value {
+    padding-top: 5px;
+    font-size: 45px;
+  }
+.statistic__seanse {
+  font-size: 20px;
+}
+
+.footer__inner {
+  flex-wrap: wrap;
+}
+
+.footer__item {
+  width: 40%;
+}
+.footer__item-title {
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+.footer__item-text {
+  font-size: 12px;
+}
+.footer__social a {
+  font-size: 30px;
+}
+.footer__link {
+  font-size: 16px;
+}
+
+}
+
+
+
+
+
+

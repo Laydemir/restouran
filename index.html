@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="style/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Grand+Hotel&family=Montserrat:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/000e39b220.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- подключение иконок -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+      integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <!-- подключение jQwery для адаптивной вёрстки-->
+
+    <title>Restaurant</title>
+  </head>
+  <body>
+    <div class="page">
+      <!-- HEADER -->
+      <div class="top-box" id="home">
+        <header class="header" id="header">
+          <div class="header__logo">
+            <img src="./imag/home/Logo.png" alt="" />
+          </div>
+          <nav class="header__nav" id="nav">
+            <a class="nav__link" href="#" data-scroll="#home">Home</a>
+            <a class="nav__link" href="#" data-scroll="#taste">Product</a>
+            <a class="nav__link" href="#" data-scroll="#statistic">Promo</a>
+            <a class="nav__link" href="#" data-scroll="#grill">About</a>
+            <a class="nav__link" href="#" data-scroll="#subscribe">Contact</a>
+            <a class="nav__link" href="">
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </a>
+          </nav>
+          <button class="burger" type="button" id="navToggle">
+            <span class="burger__item">menu</span>
+          </button>
+        </header>
+
+        <!-- HOME -->
+        <section class="home" id="home">
+          <div class="home__inner">
+            <div class="banner banner--home">
+              <div class="banner__title banner__title--home">Title Here</div>
+              <div class="banner__text banner__text--home">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Consectetur magni cupiditate neque tenetur facere corporis.
+              </div>
+              <a class="banner__button banner__button--home" href=""
+                >order now</a
+              >
+            </div>
+          </div>
+        </section>
+      </div>
+      <!-- ./top-box-->
+
+      <!-- PRODUCT -->
+      <section class="product">
+        <div class="section__top">
+          <div class="section__title">BestSeller</div>
+          <div class="section__text">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minus,
+            quia officia fugiat sunt aperiam quis ducimus!.
+          </div>
+        </div>
+
+        <div class="product__inner">
+          <div class="product__item">
+            <div class="product__img">
+              <img src="./imag/product/Product1.png" alt="" />
+            </div>
+            <div class="product__item-tittle">Title Here</div>
+            <div class="product__item-text">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit
+            </div>
+          </div>
+          <div class="product__item">
+            <div class="product__img">
+              <img src="./imag/product/Product2.png" alt="" />
+            </div>
+            <div class="product__item-tittle">Title Here</div>
+            <div class="product__item-text">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit
+            </div>
+          </div>
+          <div class="product__item">
+            <div class="product__img">
+              <img src="./imag/product/Product3.png" alt="" />
+            </div>
+            <div class="product__item-tittle">Title Here</div>
+            <div class="product__item-text">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- ./product-->
+
+      <!-- TASTE -->
+      <section class="taste" id="taste">
+        <div class="taste__inner">
+          <div class="taste__img">
+            <img src="./imag/tast/Tast.png" alt="" />
+          </div>
+          <div class="banner banner--taste">
+            <div class="banner__title banner__title--taste">Oriental Taste</div>
+            <div class="banner__text banner__text--taste">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+              Consectetur magni cupiditate neque tenetur facere corporis.
+            </div>
+            <a class="banner__button banner__button--taste" href=""
+              >order now</a
+            >
+          </div>
+        </div>
+      </section>
+      <!-- ./tast-->
+
+      <!-- STATISTIC -->
+      <section class="statistic" id="statistic">
+        <div class="section__top section__top-statistic">
+          <div class="section__title section__title-statistic">BestSeller</div>
+          <div class="section__text section__text-statistic">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minus,
+            quia officia fugiat sunt aperiam quis ducimus!.
+          </div>
+        </div>
+        <div class="statistic__inner">
+          <div class="statistic__item">
+            <div class="statistic__value">123</div>
+            <div class="statistic__seanse">outlets</div>
+          </div>
+          <div class="statistic__item">
+            <div class="statistic__value">100</div>
+            <div class="statistic__seanse">chef</div>
+          </div>
+          <div class="statistic__item">
+            <div class="statistic__value">300</div>
+            <div class="statistic__seanse">menu</div>
+          </div>
+          <div class="statistic__item">
+            <div class="statistic__value">30</div>
+            <div class="statistic__seanse">country</div>
+          </div>
+        </div>
+      </section>
+      <!-- ./Statistic -->
+
+      <!-- GRILL -->
+      <section class="grill" id="grill">
+        <div class="grill__inner">
+          <div class="banner banner--grill">
+            <div class="banner__title banner__title--grill">Chicken Grill</div>
+            <div class="banner__text banner__text--grill">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+              Consectetur magni cupiditate neque tenetur facere corporis.
+            </div>
+            <a class="banner__button banner__button--grill" href="">
+              order now</a
+            >
+          </div>
+          <div class="grill__img">
+            <img src="./imag/grill/grill.png " alt="" />
+          </div>
+        </div>
+      </section>
+      <!-- LENORA -->
+      <section class="lenora">
+        <div class="lenora__front">
+          <div class="section__lenora">
+            <div class="section__text section__text--lenora">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Lipsum
+              dolor sit amet consectetur adipisicing elitError ut iure beatae.
+            </div>
+            <div class="section__title section__title--lenora">
+              Lenora Fields
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- subscribe -->
+      <section class="subscribe" id="subscribe">
+        <div class="section__top section__top--sub">
+          <div class="section__title section__title--sub">Subscribe</div>
+          <div class="section__text section__text--sub">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minus,
+            quia officia fugiat sunt aperiam quis ducimus!.
+          </div>
+        </div>
+        <form class="subscribe__form" action="/" method="post">
+          <input
+            class="subscribe__input"
+            type="email"
+            name="name"
+            placeholder="Your Email..."
+          />
+          <button class="subscribe__btn" type="submit">subscribe</button>
+        </form>
+      </section>
+
+      <!-- ============FOOTER================= -->
+      <footer class="footer">
+        <div class="footer__inner">
+          <div class="footer__item">
+            <div class="footer__item-title">Title here</div>
+            <div class="footer__item-text">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+              Repellendus nam maxime sapiente. Odit maiores beatae magnam
+              debitis? Saepe delectus vero perferendis. Vero numquam beatae
+              autem culpa quo cum eius quisquam?
+            </div>
+            <div class="footer__social">
+              <a href="#" target="_blank">
+                <i class="fa-brands fa-instagram-square"></i>
+              </a>
+              <a href="#" target="_blank">
+                <i class="fa-brands fa-facebook-square"></i>
+              </a>
+              <a href="#" target="_blank">
+                <i class="fa-brands fa-twitter-square"></i>
+              </a>
+              <a href="#" target="_blank">
+                <i class="fa-brands fa-whatsapp-square"></i>
+              </a>
+            </div>
+          </div>
+          <div class="footer__item">
+            <div class="footer__item-title">About</div>
+            <ul>
+              <li>
+                <a class="footer__link" href="#" target="_blank">History</a>
+              </li>
+              <li>
+                <a class="footer__link" href="#" target="_blank">Out Team</a>
+              </li>
+              <li>
+                <a class="footer__link" href="#" target="_blank"
+                  >Brand Guidelines</a
+                >
+              </li>
+              <li>
+                <a class="footer__link" href="#" target="_blank">Terms</a>
+              </li>
+              <li>
+                <a class="footer__link" href="#" target="_blank"
+                  >Privacy Policy</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="footer__item">
+            <div class="footer__item-title">services</div>
+            <ul>
+              <li>
+                <a class="footer__link" href="#" target="_blank"
+                  >How to Order</a
+                >
+              </li>
+              <li>
+                <a class="footer__link" href="#" target="_blank">Out Product</a>
+              </li>
+              <li>
+                <a class="footer__link" href="#" target="_blank"
+                  >Order Status</a
+                >
+              </li>
+              <li>
+                <a class="footer__link" href="#" target="_blank">Promo</a>
+              </li>
+              <li>
+                <a class="footer__link" href="#" target="_blank"
+                  >Payment Method</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="footer__item">
+            <div class="footer__item-title">other</div>
+            <ul>
+              <li>
+                <a class="footer__link" href="#" target="_blank">Contact Us</a>
+              </li>
+              <li><a class="footer__link" href="#" target="_blank">Help</a></li>
+              <li>
+                <a class="footer__link" href="#" target="_blank">Privacy</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <!-- ./page-->
+
+    <script src="app.js"></script>
+  </body>
+</html>
